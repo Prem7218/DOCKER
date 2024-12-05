@@ -1,0 +1,10 @@
+services:
+  mysqldb:
+    image: "mysql:latest"
+    environment:
+      - MYSQL_ROOT_PASSWORD=Pass@123PRM
+      - MYSQL_DATABASE=userinfo
+    container_name: mysqldbcon
+  
+  mypyapp:
+    build: ./
